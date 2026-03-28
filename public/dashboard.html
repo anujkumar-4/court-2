@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Role Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="dash-body">
+    <header class="topbar">
+      <h2 id="dashTitle">Dashboard</h2>
+      <div class="profile-box" id="profileBox">
+        <button class="profile-btn" id="profileBtn">👤 Profile</button>
+        <div class="profile-menu" id="profileMenu">
+          <p id="profileName"></p>
+          <p id="profileRole"></p>
+          <p id="profileEmail"></p>
+          <button id="logoutBtn">Logout</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="panel" id="authorityPanel"></section>
+
+      <section class="panel">
+        <h3>Pending Cases by Priority</h3>
+        <div id="categoryFilters" class="filters"></div>
+        <div id="caseList" class="case-list"></div>
+      </section>
+    </main>
+
+    <script src="/js/dashboard.js"></script>
+  </body>
+</html>
