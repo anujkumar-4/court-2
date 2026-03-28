@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Judiciary Pending Cases Priority Management</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="auth-body">
+    <main class="login-card">
+      <h1>Judiciary Case Backlog Reduction</h1>
+      <p class="muted">Role-based login for Judge, Court (SC/HC/DC), Police Station, and Advocate.</p>
+      <form id="loginForm">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="judge@court.gov.in" required />
+
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Pass@123" required />
+
+        <button type="submit">Login</button>
+      </form>
+      <div class="demo-block">
+        <h3>Demo Credentials</h3>
+        <ul>
+          <li>judge@court.gov.in / Pass@123</li>
+          <li>sc@court.gov.in / Pass@123</li>
+          <li>hc@court.gov.in / Pass@123</li>
+          <li>dc@court.gov.in / Pass@123</li>
+          <li>police@station.gov.in / Pass@123</li>
+          <li>advocate@bar.in / Pass@123</li>
+        </ul>
+      </div>
+      <p id="error" class="error"></p>
+    </main>
+
+    <script src="/js/auth.js"></script>
+  </body>
+</html>
